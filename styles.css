@@ -2,7 +2,7 @@ h1 {
   color: #009;
 }
 ul li {
-  display: flex;
+  display: inline;
   flex-direction:row;
   flex-wrap: nowrap;
   justify-content: center;
