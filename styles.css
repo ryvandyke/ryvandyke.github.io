@@ -3,6 +3,9 @@ h1 {
 }
 ul li {
   display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content: center;
   border: none;
   text-decoration: underline;
   text-align: center;
