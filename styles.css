@@ -1,7 +1,7 @@
 h1 {
   color: #009;
 }
-ul {
+li {
   display: inline; /*here we are seeing another value inline that allows us to keep all menu items in line */
   border: none;
   text-decoration: underline;
