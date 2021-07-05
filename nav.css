@@ -1,0 +1,49 @@
+.active a:link {
+    background-color: beige;
+}
+nav {
+    top: auto;   
+    float: right;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav>ul li {
+    position: relative; 
+    text-align: center;
+    font-weight: bold;
+    color: darkmagenta;
+    float: left;
+}
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    border: 0px dotted magenta;
+    padding: 15px 15px 15px 15px;
+    width: 150px;
+    margin: 2px;
+}
+nav a:link{
+    background-color: white;
+}
+nav a:hover, nav a:focus {
+    background-color: cornsilk;
+}
+nav a:active{
+    background-color: aquamarine;
+}
+
+nav ul>li ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+nav ul ul li {
+    float:none;
+}
+
+nav>ul>li:hover>ul{
+    display: block;
+}

@@ -1,18 +1,36 @@
 h1 {
   color: #009;
-}
-nav ul{
-  display: flex;
   text-align: center;
-  flex-direction: row;
-  list-style-type: none;
-  padding: 0;
-  margin: auto;
+ 
 }
-nav li{
-  background: beige;
-  width: 150px;
-  margin: 0 15px 15px 0;
-  padding: 5px;
-  text-align: center;
+body {
+  margin: 20px;
+  background: black;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(245, 237, 237);
 }
+boxmodel {
+  float: left;
+  background-color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #009;
+  width: 300px;
+  border: 0px solid rgb(1, 10, 1);
+  padding: 50px;
+  margin: 40px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+  header {
+    background: crimson;
+  }
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
