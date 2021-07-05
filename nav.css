@@ -1,9 +1,9 @@
 .active a:link {
     background-color: beige;
+    float: right;
 }
 nav {
     top: auto;   
-    float: right;
 }
 nav ul {
     list-style-type: none;
