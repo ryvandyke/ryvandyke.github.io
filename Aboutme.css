@@ -1,4 +1,6 @@
 img {
+    height: fit-content;
+    width: fit-content;
     object-fit: cover;
 }
 .container {
