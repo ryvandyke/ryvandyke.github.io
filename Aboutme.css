@@ -5,7 +5,7 @@ img {
 }
 .container {
     display: grid;
-    grid-template: 100px 100px 100px / 30fr 70fr;
+    grid-template: 100px auto 100px / 30fr 70fr;
     grid-template-areas:    "header header" 
                             "Sidebar Main" 
                             "footer footer";
