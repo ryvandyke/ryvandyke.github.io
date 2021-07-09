@@ -1,6 +1,6 @@
 img {
-    height: auto;
-    width: auto;
+    height: strech;
+    width: strech;
     object-fit: cover;
 }
 .container {
