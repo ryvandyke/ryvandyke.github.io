@@ -1,8 +1,7 @@
 nav {
-    background: #222122;
     width: 100%;
-    text-align: center;
-    position: fixed;
+    text-align: end;
+    position: static;
   }
   
   nav ul {
@@ -20,7 +19,7 @@ nav {
     height: 50px;
     line-height: 50px;
     padding: 0 10px;
-    color: white;
+    color: red;
     text-decoration: none;
   }
   
@@ -35,8 +34,7 @@ nav {
   
   nav li ul {
     display: none;
-    position: absolute;
-    background: #222122;
+    position: fixed;
   }
   
   nav li:hover ul {
