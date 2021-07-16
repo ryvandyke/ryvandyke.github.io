@@ -89,7 +89,10 @@ grid-area: Main;
     gap: 10px;}
   }
   @media print {
-    /* HIDE UNWANTED ELEMENTS */
+  
+    a href:after {
+      content: none;
+    }
     img {
       display: none;
     }
