@@ -1,10 +1,23 @@
 @font-face {
     font-family: 'open_sans';
-    src: url('opensans-regular-webfont.woff2') format('woff2'),
-         url('opensans-regular-webfont.woff') format('woff');
+    src: url('fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+}
+.pic {
+  height: 48px;
+  width: 48px;
+}
+.picbig {
+position: absolute;
+width: 0px;
+-webkit-transition:  width 0.3s linear 0s;
+transition: width 0.3s linear 0s 
+z-index 10;
+}
+.pic:hover + .picbig {
+  width: 200px;
 }
 h1 {
   color: rgb(190, 178, 6);
