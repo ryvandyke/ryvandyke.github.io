@@ -39,8 +39,6 @@ footer {
     clear: both;
   }
   img {
-    height: 300px;;
-    width: 300px;
     object-fit: cover;
 }
 .container {
@@ -70,7 +68,9 @@ object-fit: cover;
 grid-area: Main;
 }
 .box-four {
-    grid-area: footer;
+  grid-area: footer;
+  min-height: 100%;
+  background-image: url(rob-laughter-WW1jsInXgwM-unsplash.jpg)
 }
 @media only screen and (max-width: 959px) {
   body {
