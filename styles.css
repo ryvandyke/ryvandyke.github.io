@@ -93,7 +93,7 @@ grid-area: Main;
     img {
       display: none;
     }
-    .box-two {
+    box-two {
       display: none;
     }
     /* GLOBAL RESET */
