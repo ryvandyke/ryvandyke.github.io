@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'open_sans';
-    src: url('fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
-         url('fonts/open-sans/opensans-regular-webfont.woff') format('woff');
+    src: url('opensans-regular-webfont.woff2') format('woff2'),
+         url('opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
