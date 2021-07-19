@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'open_sans';
-    src: url('opensans-regular-webfont.woff2') format('woff2'),
-         url('opensans-regular-webfont.woff') format('woff');
+    src: url('ryvandyke.github.io/opensans-regular-webfont.woff') format('woff2'),
+         url('ryvandyke.github.io/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
