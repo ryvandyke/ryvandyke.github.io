@@ -30,7 +30,7 @@ h1 {
 body {
   background: black;
   float: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'open_sans',Arial, Helvetica, sans-serif;
   color: rgb(245, 237, 237);
 }
 boxmodel {
