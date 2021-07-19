@@ -21,8 +21,7 @@ z-index 10;
 }
 h1 {
   color: rgb(190, 178, 6);
-  text-align: center;
- 
+  text-align: center; 
 }
 body {
   background: black;
@@ -52,6 +51,8 @@ footer {
     clear: both;
   }
   img {
+    width: 450px;
+    height: 450px;
     object-fit: cover;
 }
 .container {
