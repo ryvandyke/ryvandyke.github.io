@@ -20,7 +20,7 @@ label {
 line-height: 1.5;
 }
 input[type="text="]:focus, 
-input[type=type="email"]:focus {
+input[type="email="]:focus {
 display: block;
 border: 1px solid #ccc;
 border-radius: 5px;
@@ -46,8 +46,7 @@ button {
 position: absolute;
 width: 0px;
 -webkit-transition:  width 0.3s linear 0s;
-transition: width 0.3s linear 0s 
-z-index 20;
+transition: width 0.3s linear 0s
 }
 .pic:hover + .picbig {
   width: 40px;
@@ -125,7 +124,6 @@ grid-area: Main;
   border: 1px solid grey;
   border-collapse: collapse;
   padding: 5px;
-  font-size: 10;
 }
   .container {
     display: grid;
