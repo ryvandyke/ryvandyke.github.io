@@ -27,6 +27,22 @@ border-radius: 5px;
 border-color: #7db0fb;
 padding: 0.5rem 0.7rem;
 }
+#counter-area {
+  padding: 2px;
+  background-color: rgba(205, 204, 204, 0.19);
+  border-radius: 2px;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#counter {
+  color: white;
+  background-color: red;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
 button {
   background: #0d6efd;
   color: #fff
