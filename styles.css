@@ -118,7 +118,7 @@ grid-area: Main;
 }
 @media only screen and (max-width: 959px) {
   body {
-    background-color: lightgray;
+    background-color: rgb(10, 10, 10);
   }
   table, td, th, thead, tbody{
   width: 50%;
