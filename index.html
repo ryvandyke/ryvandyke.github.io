@@ -9,42 +9,20 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="nav.css">
-    <style>
-        .main_container {
-            height: 46px;
-            width: auto;
-            padding: 3px;
-            margin: 2px;
-            max-width: 300px;
-            background-color: #555555;
-            align-content: center;
-        }
 
-        .container_inner {
-            height: auto;
-            border: none;
-            background-color: #555555;
-            max-width: 290px;
-            vertical-align: center;
-            padding-top: 12px;
-            padding-left: 10px;
-            align-content: center;
-        }
-
-        .live_cnt {
-            width: 30px;
-            height: 30px;
-            background-color: #888888;
-            color: #ffffff;
-            font-size: 22px;
-            text-align: center;
-            line-height: 20px;
-            padding: 3px;
-            margin: 1.5px;
-            font-family: verdana;
-            vertical-align: center;
-        }
-    </style>
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function setCounterValue() {
+                var random = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
+                $("div#counter").html("visitor " + random);
+                setTimeout(function () { setCounterValue(); }, 3000);
+            }
+            setCounterValue();
+            setTimeout(function () { setCounterValue(); }, 3000);
+        });
+    </script>
 </head>
 
 <body>
@@ -73,29 +51,7 @@
             </ul>
         </nav>
     </header>
-
-    <body onload="CounterVisitor(10)">
-        <div class="main_container" id="id_main_container">
-            <div class="container_inner" id="display_div_id">
-            </div>
-        </div>
-    </body>
-    <script>function random(min, max) {
-            return Math.floor(Math.random() * (max - min + 1) + min);
-        }
-
-        var initial = random(500, 2000);
-        var count = initial;
-
-        setInterval(function () {
-            var variation = random(-5, 5);
-
-            count += variation
-            console.log('You currently have ' + count + ' visitors')
-
-        }, 2000)</script>
-
-
+    <div id="counter"></div>
     <div class="container">
         <div class="box box-one">
             <h1>My name is Ryan VanDyke - Welcome to my technical theatre design portfolio</h1>
