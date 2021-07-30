@@ -9,6 +9,44 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="nav.css">
+
+    <title>JS Counter - www.ryvandyke.github.io/index.html</title>
+    <style>
+        .main_container {
+            height: 46px;
+            width: auto;
+            padding: 3px;
+            margin: 2px;
+            max-width: 300px;
+            background-color: #555555;
+            align-content: center;
+        }
+
+        .container_inner {
+            height: auto;
+            border: none;
+            background-color: #555555;
+            max-width: 290px;
+            vertical-align: center;
+            padding-top: 12px;
+            padding-left: 10px;
+            align-content: center;
+        }
+
+        .live_cnt {
+            width: 30px;
+            height: 30px;
+            background-color: #888888;
+            color: #ffffff;
+            font-size: 22px;
+            text-align: center;
+            line-height: 20px;
+            padding: 3px;
+            margin: 1.5px;
+            font-family: verdana;
+            vertical-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,23 +75,45 @@
             </ul>
         </nav>
     </header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <div class="item-animate">
-        <h2 class="code">0</h2>
-    </div>
+
+    <body onload="CounterVisitor(10)">
+        <div class="main_container" id="id_main_container">
+            <div class="container_inner" id="display_div_id">
+            </div>
+        </div>
+    </body>
     <script>
-        $({ countNum: $('.code').html() }).animate({ countNum: 4000 }, {
-            duration: 8000,
-            easing: 'linear',
-            step: function () {
-                $('.code').html(Math.floor(this.countNum) + "+");
-            },
-            complete: function () {
-                $('.code').html(this.countNum + "+");
-                //alert('finished');
-            }
-        });
+        var total_visitor_list = [10, 10000, 10000];
+        var visitor_cnt_0 = total_visitor_list[0];
+        var visitor_cnt_1 = total_visitor_list[1];
+        var visitor_cnt_2 = total_visitor_list[2];
+        var result_data = "";
+        var display_div = document.getElementById("display_div_id");
+        function CounterVisitor(current_count) {
+            setInterval(function () {
+                // clear count
+                while (display_div.hasChildNodes()) {
+                    display_div.removeChild(display_div.lastChild);
+                }
+                visitor_cnt_0++;
+                if (visitor_cnt_0 > 99) {
+                    visitor_cnt_0 = 10; // reset count
+                    visitor_cnt_1++;    // increase next count
+                }
+                if (visitor_cnt_1 > 99999) {
+                    visitor_cnt_2++;
+                }
+                result_data = visitor_cnt_2.toString() + visitor_cnt_1.toString() + visitor_cnt_0.toString();
+                for (var i = 0; i < result_data.length; i++) {
+                    var live_flag = document.createElement('span');
+                    live_flag.className = 'live_cnt';
+                    live_flag.innerText = result_data[i];
+                    display_div.appendChild(live_flag);
+                }
+            }, 1000);
+        }
     </script>
+
     <div class="container">
         <div class="box box-one">
             <h1>My name is Ryan VanDyke - Welcome to my technical theatre design portfolio</h1>
